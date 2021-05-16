@@ -40,10 +40,12 @@ body {
 .nav-link {
   text-decoration: none;
   transition: transform 250ms;
+  color: #4dafe1;
 }
 
 .nav-link:hover {
   transform: translateY(-3px);
+  color: #4dafe1;
 }
 
 .social-media {
@@ -90,4 +92,57 @@ body {
   font-size: 45px;
   color: #4dafe1;
   padding-top: 150px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.hidden-links {
+  transition: .1s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card {
+  background:rgb(16, 20, 25);
+}
+
+.project-item:hover .card-img{
+  opacity: .3;
+}
+
+.project-item:hover .hidden-links {
+  opacity: 1;
+}
+
+.card-title {
+  color: white;
+}
+
+.card-image {
+  opacity: 1;
+  transition: .1s ease;
+  backface-visibility: hidden;
+}
+
+.view-webiste {
+  margin: 10px;
+  display: block;
+  color: #4dafe1;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.about-project {
+  color: #4dafe1;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.view-webiste:hover, .about-project:hover {
+  text-decoration: none;
 }
