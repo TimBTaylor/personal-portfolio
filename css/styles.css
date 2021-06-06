@@ -30,26 +30,32 @@ body {
   color: white;
 }
 
-.see-more {
-  font-size: 20px;
-  padding-top: 300px;
-  color: white;
-  content: "\2193";
-}
-
 .nav-link {
-  text-decoration: none;
-  transition: transform 250ms;
   color: #4dafe1;
+  text-decoration: none;
+  position: relative;
 }
 
-.nav-link:hover {
-  transform: translateY(-3px);
-  color: #4dafe1;
+.nav-link::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4dafe1;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav-link:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 }
 
 .social-media {
-  padding-left: 15px;
   display: inline-block;
 }
 
@@ -57,92 +63,27 @@ body {
   text-align: center;
 }
 
-.about {
+.contact-resume-links {
   text-align: center;
-  font-size: 45px;
-  color: #4dafe1;
-  padding-top: 150px;
+  padding-top: 250px;
 }
 
-.about-paragraph {
-  color: white;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-  padding-top: 20px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-.skills {
-  color: #4dafe1;
-  font-size: 35px;
-  text-align: center;
-  padding-top: 50px;
-  display:block;
-}
-
-.skills-image {
-  display: block;
-  margin: auto;
-}
-
-.projects {
-  text-align: center;
-  font-size: 45px;
-  color: #4dafe1;
-  padding-top: 150px;
-  padding-bottom: 20px;
-  display: block;
-}
-
-.hidden-links {
-  transition: .1s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.card {
-  background:rgb(16, 20, 25);
-}
-
-.project-item:hover .card-img{
-  opacity: .3;
-}
-
-.project-item:hover .hidden-links {
-  opacity: 1;
-}
-
-.card-title {
-  color: white;
-}
-
-.card-image {
-  opacity: 1;
-  transition: .1s ease;
-  backface-visibility: hidden;
-}
-
-.view-webiste {
-  margin: 10px;
-  display: block;
-  color: #4dafe1;
+.contact, .resume {
+  display: inline-block;
   font-style: italic;
-  text-decoration: underline;
 }
 
-.about-project {
+.contact-link, .resume-link {
   color: #4dafe1;
-  font-style: italic;
-  text-decoration: underline;
+  text-decoration: none;
+  padding: 8px;
+  text-align: center;
+  margin: 5px;
 }
 
-.view-webiste:hover, .about-project:hover {
+.contact-link:hover, .resume-link:hover {
+  color: white;
+  border: 1px solid #4dafe1;
   text-decoration: none;
 }
+
