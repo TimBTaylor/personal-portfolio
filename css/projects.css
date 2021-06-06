@@ -54,27 +54,64 @@
   }
 
   .card-img-top {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding-top: 10px;
   }
 
   .card-body {
     color: white;
-  }
-  
-  .card-title, .card-text{
-    text-align: center;
-  }
-
-  .card-links {
     display: inline-block;
-  }
-
-  .see-project-details {
-      color: #4dafe1;
-      text-align: center;
-  }
-
-  .view-site {
-    color: #4dafe1;
     text-align: center;
+  }
+
+  .hvr-reveal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 7px;
+    margin: 5px;
+    color:#4dafe1;
+    font-style: italic;
+  }
+
+  .hvr-reveal:hover {
+    color: white;
+  }
+
+  .hvr-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-color: #4dafe1;
+    border-style: solid;
+    border-width: 0;
+    -webkit-transition-property: border-width;
+    transition-property: border-width;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-reveal:hover:before, .hvr-reveal:focus:before, .hvr-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    border-width: 4px;
+  }
+
+  .contact-resume-links {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+
+  .contact, .resume {
+    display: inline-block;
   }
