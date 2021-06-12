@@ -1,10 +1,10 @@
-.navbar {
-  background-color: #999b9c;
-}
-
 .nav-item {
   margin: 0;
   padding-right: 45px;
+}
+
+nav {
+  background: rgb(16, 20, 25);
 }
 
 body {
@@ -27,6 +27,10 @@ body {
   color: #4dafe1;
   text-decoration: none;
   position: relative;
+}
+
+.nav-link:hover {
+  color: white;
 }
 
 .nav-link::before {
