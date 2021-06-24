@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-sm fixed-top">
         <a href="https://github.com/TimBTaylor" target="_blank" class="social-media">
-            <img class="navbar-brand" src="images/github_icon.svg" alt="github image" />
+            <img class="navbar-brand github-icon" src="images/github.svg" alt="github image" />
         </a>
         <a href="https://www.linkedin.com/in/tim-taylor-aaa970207/" target="_blank" class="social-media">
             <img class="navbar-brand" src="images/linkedin_icon.svg" alt="linkedin image" />
@@ -44,48 +44,51 @@
     <h1 class="projects">Projects</h1>
     <div class="container">
         <div class="row">
-            <div class="card col" style="width: 18rem;">
-                <img class="card-img-top" src="images/meetApp.jpg" alt="Card image cap">
+            <div class="card col align-items-center" style="width: 18rem;">
+                <div class="image">
+                    <img class="card-img-top" src="images/meetApp.jpg" alt="Card image cap">
+                    <div class="image-overlay">
+                        <a target="_blank" href="https://github.com/TimBTaylor/meet" class="hidden-link">Project code</a>
+                        <a target="_blank" href="https://timbtaylor.github.io/meet/" class="hidden-link">View project</a>
+                    </div>
+                </div>
                 <div class="card-body">
                     <h2 class="card-title">Developer Events</h2>
-                    <p class="card-text">This serverless progressive web application shows developer events around the world using the Google Calendar API. 
-                        You can see events according to the city you enter and the number of events you want to see. I built this site using Test-Driven Developement process and Behavior-Drive Development process. 
-                        For more information about this project <span><a href="https://github.com/TimBTaylor/meet/blob/master/README.md" target="_blank" class="github-readme">click here.</a></span></p>
-                    <h3 class="built-with card-text">Built with:</h3>
-                    <ul class="built-with-list card-text">
-                        <div class="row list-items">
-                            <li class="built-with-list-item col">
-                                HTML
-                            </li>
-                            <li class="built-with-list-item col">
-                                CSS
-                            </li>
-                            <li class="built-with-list-item col">
-                                React.js
-                            </li>
-                        </div>
-                        <div class="row">
-                            <li class="built-with-list-item col">
-                                Recharts
-                            </li>
-                            <li class="built-with-list-item col">
-                                Jest/Cucumber
-                            </li>
-                            <li class="built-with-list-item col">
-                                Puppeteer
-                            </li>
-                        </div>
-                    </ul>
-                    <a target="_blank" href="https://github.com/TimBTaylor/meet" class="hvr-reveal">Project code</a>
-                    <a target="_blank" href="https://timbtaylor.github.io/meet/" class="hvr-reveal">View project</a>
+                    <p class="card-text">This serverless progressive web application shows developer events around the world using the Google Calendar API.</p>
+                    <h4 class="built-with card-text">Technologies</h4>
+                    <div class="card-text">
+                        <img src="projects-images/html.svg" alt="html" class="technologies"/> 
+                        <img src="projects-images/css.svg" alt="css" class="technologies"/>
+                        <img src="projects-images/javascript.svg" alt="javscript" class="technologies"/>
+                    </div>
+                    <div class="card-text">
+                        <img src="projects-images/bootstrap.svg" alt="bootstrap" class="technologies"/> 
+                        <img src="projects-images/nodejs.svg" alt="nodejs" class="technologies"/>
+                        <img src="projects-images/react.svg" alt="react" class="technologies"/>
+                    </div>
                 </div>
             </div>
-            <div class="card col" style="width: 18rem;">
-                <img class="card-img-top" src="images/myFlix.jpg" alt="Card image cap">
+            <div class="card col align-items-center" style="width: 18rem;">
+                <div class="image">
+                    <img class="card-img-top" src="projects-images/chat-app.png" alt="Card image cap">
+                    <div class="image-overlay">
+                        <a target="_blank" href="https://github.com/TimBTaylor/chat-app-main/tree/main" class="hidden-link">Project code</a>
+                    </div>
+                </div>
                 <div class="card-body">
-                    <h2 class="card-title">Movie Flix</h2>
-                    <a href="#" class="hvr-reveal">Project details</a>
-                    <a href="#" class="hvr-reveal">View project</a>
+                    <h2 class="card-title">Chat App</h2>
+                    <p class="card-text">
+                        Here is a chat app for mobile devices.
+                        The app provides uers with a chat interface and option to share images and their location.
+                    </p>
+                    <h4 class="built-with card-text">Technologies</h4>
+                    <div class="card-text">
+                        <img src="projects-images/react.svg" alt="react" class="technologies"/> 
+                        <img src="projects-images/firebase.svg" alt="firebase" class="technologies"/>
+                    </div>
+                    <div class="card-text">
+                        <img src="projects-images/expo.svg" alt="expo" class="technologies"/> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,23 +102,13 @@
                 </div>
             </div>
             <div class="card col" style="width: 18rem;">
-                <img class="card-img-top" src="images/myFlix.jpg" alt="Card image cap">
+                <img class="card-img-top chat-app" src="images/myFlix.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h2 class="card-title">Movie Flix</h2>
                     <a href="#" class="hvr-reveal">Project details</a>
                     <a href="#" class="hvr-reveal">View project</a>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="contact-resume-links container">
-        <div class="">
-            <h3 class="contact">
-                <a class="hvr-reveal" href="contact.html">Contact me</a>
-            </h3>
-            <h3 class="resume">
-                <a class="hvr-reveal" href="#">See my resume</a>
-            </h3>
         </div>
     </div>
 
