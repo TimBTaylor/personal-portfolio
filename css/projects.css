@@ -7,6 +7,14 @@ nav {
   background: rgb(16, 20, 25);
 }
 
+.custom-toggler.navbar-toggler {
+  border-color: white;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 body {
   background: rgb(16, 20, 25);
 }
@@ -127,19 +135,47 @@ body {
   font-size: 28px;
 }
 
-.hidden-link {
-  color: #4dafe1;
-  margin: 10px;
-  border: 1px solid white;
-  border-radius: 25px;
-  padding: 10px;
+.project-links {
+  display: none;
 }
 
-.hidden-link:hover {
-  background-color: #4dafe1;
-  color: white;
-  text-decoration: none;
-  border: 1px solid #4dafe1;
+@media (max-width: 500px) {
+  .project-links {
+    color: #4dafe1;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    display: inline-block;
+  }
+
+  .project-links:hover {
+    background-color: #4dafe1;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #4dafe1;
+  }
+
+  .hidden-link {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .hidden-link {
+    color: #4dafe1;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px;
+  }
+
+  .hidden-link:hover {
+    background-color: #4dafe1;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #4dafe1;
+  }
 }
 
 .technologies {
