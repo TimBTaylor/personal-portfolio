@@ -68,6 +68,7 @@ body {
 
 .card-title {
   color: #4dafe1;
+  font-size: 2em;
 }
 
 .image {
@@ -119,6 +120,10 @@ body {
   text-align: center;
 }
 
+.card-text {
+  font-size: 1em;
+}
+
 .contact-resume-links {
   text-align: center;
   margin-top: 100px;
@@ -132,21 +137,21 @@ body {
 
 .built-with {
   color: #4dafe1;
-  font-size: 28px;
+  font-size: 2em;
 }
 
 .project-links {
   display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 575px) {
   .project-links {
     color: #4dafe1;
-    margin: 10px;
     border: 1px solid white;
-    border-radius: 25px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 5px;
     display: inline-block;
+    font-size: 0.8em;
   }
 
   .project-links:hover {
@@ -159,9 +164,13 @@ body {
   .hidden-link {
     display: none;
   }
+
+  .image-overlay:hover {
+    opacity: 0;
+  }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 575px) {
   .hidden-link {
     color: #4dafe1;
     margin: 10px;
