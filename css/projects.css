@@ -57,7 +57,7 @@ body {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 75px;
-  font-size: 80px;
+  font-size: 5rem;
   color: #4dafe1;
 }
 
@@ -68,7 +68,7 @@ body {
 
 .card-title {
   color: #4dafe1;
-  font-size: 2em;
+  font-size: 2.5rem;
 }
 
 .image {
@@ -121,7 +121,7 @@ body {
 }
 
 .card-text {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .contact-resume-links {
@@ -137,7 +137,7 @@ body {
 
 .built-with {
   color: #4dafe1;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .project-links {
@@ -151,7 +151,7 @@ body {
     border-radius: 10px;
     padding: 5px;
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 
   .project-links:hover {
@@ -168,15 +168,45 @@ body {
   .image-overlay:hover {
     opacity: 0;
   }
+
+  .nav-link::before {
+    transition: none;
+  }
+
+  .nav-link:hover::before {
+    left: 0;
+    right: 0;
+    width: 0;
+  }
 }
 
-@media (min-width: 575px) {
+@media (min-width: 770px) {
   .hidden-link {
     color: #4dafe1;
     margin: 10px;
     border: 1px solid white;
     border-radius: 25px;
     padding: 10px;
+    font-size: 1rem;
+  }
+
+  .hidden-link:hover {
+    background-color: #4dafe1;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #4dafe1;
+  }
+}
+
+@media (max-width: 770px) {
+  .hidden-link {
+    color: #4dafe1;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 5px;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 3px;
   }
 
   .hidden-link:hover {
