@@ -48,45 +48,6 @@ body {
   }
 }
 
-.social-media {
-  display: inline-block;
-}
-
-.get-in-touch {
-  display: block;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 75px;
-  font-size: 80px;
-  color: #4dafe1;
-}
-
-.contact-contents {
-  display: inline-block;
-  text-align: center;
-}
-
-.email-contents,
-.phone-contents,
-.linkedin-contents {
-  text-align: center;
-}
-
-.email-image,
-.phone-image,
-.linkedin-image {
-  background-color: white;
-  height: 10%;
-  width: 10%;
-  border-radius: 60%;
-  display: inline-block;
-  text-align: center;
-}
-
-.email-link {
-  text-align: center;
-}
-
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 * {
@@ -182,4 +143,20 @@ body {
   .msg {
     width: 100%;
   }
+}
+
+@media (max-width: 575px) {
+  .nav-link::before {
+    transition: none;
+  }
+
+  .nav-link:hover::before {
+    left: 0;
+    right: 0;
+    width: 0;
+  }
+}
+
+.contact-image {
+  background-color: white;
 }

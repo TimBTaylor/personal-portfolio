@@ -66,3 +66,15 @@ body {
   margin: 20px;
   font-size: 50px;
 }
+
+@media (max-width: 575px) {
+  .nav-link::before {
+    transition: none;
+  }
+
+  .nav-link:hover::before {
+    left: 0;
+    right: 0;
+    width: 0;
+  }
+}
