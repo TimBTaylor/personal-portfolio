@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-item {
   margin: 0;
   padding-right: 45px;
@@ -17,6 +21,7 @@ nav {
 
 body {
   background: rgb(16, 20, 25);
+  font-family: "Lato", sans-serif;
 }
 
 .greeting {
@@ -65,12 +70,15 @@ body {
 }
 
 .intro {
-  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
-.contact-resume-links {
+.resume-link {
   text-align: center;
-  margin-top: 300px;
+  margin-top: 100px;
+  margin-bottom: 350px;
 }
 
 .resume {
@@ -95,4 +103,319 @@ body {
     right: 0;
     width: 0;
   }
+}
+
+/* projects section css */
+.projects-section {
+  background-color: rgb(247, 247, 247);
+  padding-bottom: 30px;
+}
+
+.projects {
+  display: block;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 45px;
+  font-size: 4rem;
+  color: #4dafe1;
+}
+
+.carousel .carousel-indicators li {
+  background-color: #444;
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #000;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+.projects-container {
+  padding: 30px;
+  border-radius: 40px;
+  background-color: #fff;
+}
+
+.project-1,
+.project-2 {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 25px;
+  border: 1px solid #bababa;
+  transition: 0.5s ease-in-out;
+  height: 20rem;
+}
+
+.project-1:hover,
+.project-2:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img-top {
+  border-radius: 25px;
+}
+
+.carousel {
+  display: inline-block;
+}
+
+.project-title {
+  font-size: 2rem;
+  color: #4dafe1;
+}
+
+.details-list-item {
+  font-size: 1rem;
+}
+
+.technologies-used {
+  font-size: 1.3rem;
+  color: #4dafe1;
+}
+
+.tech-item {
+  font-size: 1rem;
+}
+
+.tech-used-list {
+  display: inline-block;
+}
+
+.code-link,
+.live-link {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.live-link {
+  margin-left: 15px;
+}
+
+.code-link:hover,
+.live-link:hover {
+  color: black;
+}
+
+/* about section css */
+.about-me {
+  display: block;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 4rem;
+  color: #4dafe1;
+}
+
+.me {
+  color: #4dafe1;
+}
+
+.personal-div,
+.professional-div {
+  margin: 15px;
+}
+
+.personal,
+.professional {
+  color: #4dafe1;
+  margin-top: 50px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.about-me-information {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  overflow: auto;
+}
+
+.skills {
+  display: block;
+  text-align: center;
+}
+
+.skills-header {
+  text-align: center;
+  display: block;
+  padding-top: 100px;
+  font-size: 55px;
+  color: #4dafe1;
+}
+
+.skill-images {
+  text-align: center;
+  display: block;
+}
+
+.skills-container {
+  display: inline-block;
+}
+
+.skills-label {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.html-image,
+.css-image,
+.javascript-image,
+.react-image,
+.bootstrap-image,
+.git-image,
+.node-image,
+.mongo-image {
+  margin: 30px;
+}
+
+.dev-tools-header {
+  padding-top: 100px;
+  font-size: 40px;
+  color: #4dafe1;
+}
+
+@media (max-width: 770px) {
+  .html-image,
+  .css-image,
+  .javascript-image,
+  .react-image,
+  .bootstrap-image,
+  .git-image,
+  .node-image,
+  .mongo-image .resume-image,
+  .linkedin-image,
+  .email-image {
+    height: 70%;
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  .html-image,
+  .css-image,
+  .javascript-image,
+  .react-image,
+  .bootstrap-image,
+  .git-image,
+  .node-image,
+  .mongo-image,
+  .resume-image,
+  .linkedin-image,
+  .email-image {
+    height: 30%;
+    width: 30%;
+  }
+}
+
+/* contact section css */
+.intro {
+  padding-top: 100px;
+  font-size: 4rem;
+  color: #4dafe1;
+  text-align: center;
+}
+
+.contact-items {
+  padding-top: 50px;
+}
+
+.email,
+.linkedin,
+.resume {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-item {
+  color: #fff;
+  margin: 10px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.contact-info {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #fff;
+  margin: 20px;
+  text-decoration: underline;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-me {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.name-email {
+  justify-content: center;
+}
+
+.input {
+  margin: 10px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  color: white;
+}
+
+.input:focus,
+textarea:focus {
+  color: white;
+}
+
+.message {
+  justify-content: center;
+}
+
+textarea {
+  height: 150px;
+  width: 300px;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  color: white;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.send {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 25px;
+  background: none;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+.send:hover {
+  background-color: #4dafe1;
 }

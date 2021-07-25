@@ -4,7 +4,7 @@
 }
 
 nav {
-  background: rgb(16, 20, 25);
+  background: #fff;
 }
 
 .custom-toggler.navbar-toggler {
@@ -16,7 +16,7 @@ nav {
 }
 
 body {
-  background: rgb(16, 20, 25);
+  background: rgb(247, 247, 247);
 }
 
 .nav-link {
@@ -26,7 +26,7 @@ body {
 }
 
 .nav-link:hover {
-  color: white;
+  color: #000;
 }
 
 .nav-link::before {
@@ -56,119 +56,12 @@ body {
   display: block;
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 75px;
-  font-size: 5rem;
+  padding-bottom: 45px;
+  font-size: 4rem;
   color: #4dafe1;
-}
-
-.card {
-  margin: 5px;
-  background: rgb(16, 20, 25);
-}
-
-.card-title {
-  color: #4dafe1;
-  font-size: 2.5rem;
-}
-
-.image {
-  position: relative;
-}
-
-.card-img-top {
-  display: block;
-  border-radius: 5px;
-}
-
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-}
-
-.image-overlay:hover {
-  opacity: 2;
-}
-
-.image-overlay > * {
-  transform: translateY(20px);
-  transition: transform 0.25s;
-}
-
-.image-overlay:hover > * {
-  transform: translateY(0);
-}
-
-.card-img-top:hover + .button,
-.button:hover {
-  display: inline;
-}
-
-.card-body {
-  color: white;
-  display: inline-block;
-  text-align: center;
-}
-
-.card-text {
-  font-size: 1rem;
-}
-
-.contact-resume-links {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 25px;
-}
-
-.contact,
-.resume {
-  display: inline-block;
-}
-
-.built-with {
-  color: #4dafe1;
-  font-size: 2rem;
-}
-
-.project-links {
-  display: none;
 }
 
 @media (max-width: 575px) {
-  .project-links {
-    color: #4dafe1;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 5px;
-    display: inline-block;
-    font-size: 0.8rem;
-  }
-
-  .project-links:hover {
-    background-color: #4dafe1;
-    color: white;
-    text-decoration: none;
-    border: 1px solid #4dafe1;
-  }
-
-  .hidden-link {
-    display: none;
-  }
-
-  .image-overlay:hover {
-    opacity: 0;
-  }
-
   .nav-link::before {
     transition: none;
   }
@@ -180,43 +73,84 @@ body {
   }
 }
 
-@media (min-width: 770px) {
-  .hidden-link {
-    color: #4dafe1;
-    margin: 10px;
-    border: 1px solid white;
-    border-radius: 25px;
-    padding: 10px;
-    font-size: 1rem;
-  }
-
-  .hidden-link:hover {
-    background-color: #4dafe1;
-    color: white;
-    text-decoration: none;
-    border: 1px solid #4dafe1;
-  }
+.carousel .carousel-indicators li {
+  background-color: #444;
 }
 
-@media (max-width: 770px) {
-  .hidden-link {
-    color: #4dafe1;
-    border: 1px solid white;
-    border-radius: 25px;
-    padding: 5px;
-    display: inline-block;
-    font-size: 0.8rem;
-    margin: 3px;
-  }
-
-  .hidden-link:hover {
-    background-color: #4dafe1;
-    color: white;
-    text-decoration: none;
-    border: 1px solid #4dafe1;
-  }
+.carousel .carousel-indicators .active {
+  background-color: #000;
 }
 
-.technologies {
-  margin: 10px;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+.container {
+  background-color: #fff;
+}
+
+.projects-container {
+  padding: 30px;
+  border-radius: 40px;
+}
+
+.project-1,
+.project-2 {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 25px;
+  border: 1px solid #bababa;
+  transition: 0.5s ease-in-out;
+  height: 20rem;
+}
+
+.project-1:hover,
+.project-2:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img-top {
+  border-radius: 25px;
+}
+
+.carousel {
+  display: inline-block;
+}
+
+.project-title {
+  font-size: 2rem;
+  color: #4dafe1;
+}
+
+.details-list-item {
+  font-size: 1rem;
+}
+
+.technologies-used {
+  font-size: 1.3rem;
+  color: #4dafe1;
+}
+
+.tech-item {
+  font-size: 1rem;
+}
+
+.tech-used-list {
+  display: inline-block;
+}
+
+.code-link,
+.live-link {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.live-link {
+  margin-left: 15px;
+}
+
+.code-link:hover,
+.live-link:hover {
+  color: black;
 }
