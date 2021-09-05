@@ -137,6 +137,8 @@ body {
   padding: 30px;
   border-radius: 40px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-1,
@@ -146,12 +148,17 @@ body {
   border-radius: 25px;
   border: 1px solid #bababa;
   transition: 0.5s ease-in-out;
-  height: 20rem;
+  height: 40vh;
 }
 
 .project-1:hover,
 .project-2:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image {
+  display: flex;
+  align-content: center;
 }
 
 .card-img-top {
