@@ -306,9 +306,7 @@ body {
   .bootstrap-image,
   .git-image,
   .node-image,
-  .mongo-image .resume-image,
-  .linkedin-image,
-  .email-image {
+  .mongo-image {
     height: 70%;
     width: 70%;
   }
@@ -322,12 +320,9 @@ body {
   .bootstrap-image,
   .git-image,
   .node-image,
-  .mongo-image,
-  .resume-image,
-  .linkedin-image,
-  .email-image {
-    height: 30%;
-    width: 30%;
+  .mongo-image {
+    height: 50%;
+    width: 50%;
   }
 }
 
@@ -340,30 +335,70 @@ body {
 }
 
 .contact-items {
-  padding-top: 50px;
+  margin-top: 50px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 100px 0;
 }
 
 .email,
-.linkedin,
-.resume {
+.phone,
+.linkedin-contact,
+.resume-contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-.contact-item {
-  color: #fff;
-  margin: 10px;
-  font-size: 2rem;
-  text-decoration: underline;
+.contact-image-container {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  color: #4dafe1;
+  font-size: 1.2rem;
 }
 
 .contact-info {
-  font-size: 1.5rem;
-  font-style: italic;
   color: #fff;
-  margin: 20px;
-  text-decoration: underline;
+}
+
+.contact-info a:hover {
+  color: #4dafe1;
+}
+
+.email-image {
+  margin-top: 22px;
+}
+
+.phone-image {
+  margin-top: 22px;
+}
+
+.linkedin-contact {
+  margin-top: 24px;
+}
+
+.linkedin-image {
+  margin-top: 13px;
+}
+
+.resume-contact {
+  margin-bottom: 0px;
+}
+
+.resume-image {
+  margin: 18px 3px 0 0;
 }
 
 .contact {
@@ -504,5 +539,13 @@ textarea {
     width: 100%;
     justify-content: center;
     height: 45%;
+  }
+}
+
+/* contact section responsive */
+
+@media (max-width: 767px) {
+  .resume-contact {
+    margin-top: 20px;
   }
 }
