@@ -286,7 +286,7 @@ body {
 .javascript-image,
 .react-image,
 .bootstrap-image,
-.git-image,
+.mysql-image,
 .node-image,
 .mongo-image {
   margin: 30px;
@@ -304,7 +304,7 @@ body {
   .javascript-image,
   .react-image,
   .bootstrap-image,
-  .git-image,
+  .mysql-image,
   .node-image,
   .mongo-image {
     height: 70%;
@@ -318,7 +318,7 @@ body {
   .javascript-image,
   .react-image,
   .bootstrap-image,
-  .git-image,
+  .mysql-image,
   .node-image,
   .mongo-image {
     height: 50%;
