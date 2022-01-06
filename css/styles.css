@@ -148,7 +148,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .project-image {
@@ -288,7 +288,10 @@ body {
 .bootstrap-image,
 .mysql-image,
 .node-image,
-.mongo-image {
+.mongo-image,
+.react-native-image,
+.redux-image,
+.sass-image {
   margin: 30px;
 }
 
@@ -306,7 +309,10 @@ body {
   .bootstrap-image,
   .mysql-image,
   .node-image,
-  .mongo-image {
+  .mongo-image,
+  .react-native-image,
+  .redux-image,
+  .sass-image {
     height: 70%;
     width: 70%;
   }
@@ -320,7 +326,10 @@ body {
   .bootstrap-image,
   .mysql-image,
   .node-image,
-  .mongo-image {
+  .mongo-image,
+  .react-native-image,
+  .redux-image,
+  .sass-image {
     height: 50%;
     width: 50%;
   }
